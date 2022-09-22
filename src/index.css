@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'markPro';
+    font-weight: 400;
+    src: url('../assets/tff/MARK_PRO.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'markPro';
+    font-weight: 500;
+    src: url('../assets/tff/MARK_PRO_MEDIUM.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'markPro';
+    font-weight: 700;
+    src: url('../assets/tff/MARK_PRO_BOLD.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'markPro';
+    font-weight: 800;
+    src: url('../assets/tff/MARK_PRO_HEAVY.TTF') format('truetype');
+}
+
+
+body {
+    font-family: 'markPro';
+}
+
+
+.borderInput {
+    border: 1px solid #D9D9D9;
+    width: 203px !important;
+    height: 35px;
+}
+
+.borderInput::placeholder {
+    color: #5F5F5F;
+}
+
+select.borderInput{
+    position: relative;
+    height: 35px;
+    color: #5F5F5F;
+}
+
+.selectBox {
+    position: relative;
+}
+.selectIcon {
+    position: absolute;
+    z-index: 1;
+    bottom: 8px;
+    left: 15px;
+}
+
+
+input[type="date"] {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 20px;
+    color: #5F5F5F;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: black;
+    opacity: 1;
+    display: block;
+    background: url('../assets/icons/calendar.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+    position: absolute;
+    left: 15px;
+}
+
